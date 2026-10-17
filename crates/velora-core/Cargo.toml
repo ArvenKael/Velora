@@ -1,0 +1,8 @@
+[package]
+name = "velora-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tracing = "0.1"
+velora-log = { path = "../velora-log" }

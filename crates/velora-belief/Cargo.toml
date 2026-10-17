@@ -1,0 +1,14 @@
+[package]
+name = "velora-belief"
+version = "0.1.0"
+edition = "2024"
+description = "Evidence-backed beliefs, projected from history"
+
+[dependencies]
+async-trait = "0.1"
+velora-event = { path = "../velora-event" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt", "time"] }

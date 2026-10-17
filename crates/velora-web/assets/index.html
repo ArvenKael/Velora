@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velora — agent console</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">&#9670;</span>
+      <span class="brand-name">VELORA</span>
+      <span class="brand-sub">agent internals</span>
+    </div>
+    <div class="topstats" id="topstats"></div>
+    <div class="conn" id="conn" data-state="connecting">
+      <span class="conn-dot" aria-hidden="true"></span>
+      <span class="conn-text" id="conn-text">connecting</span>
+      <span class="conn-meta" id="conn-meta"></span>
+    </div>
+  </header>
+
+  <div class="banner" id="banner" role="status" hidden></div>
+
+  <main class="grid">
+
+    <!-- chat ---------------------------------------------------------------->
+    <section class="panel panel-chat" aria-label="Conversation">
+      <div class="panel-head">
+        <h2>conversation</h2>
+        <span class="panel-meta" id="chat-meta"></span>
+      </div>
+
+      <div class="scroll" id="chat-scroll">
+        <p class="empty" id="chat-empty">
+          No conversation yet. Velora has no dialogue in this history &mdash;
+          type a message below to give it something to work on.
+        </p>
+        <ol class="chat-list" id="chat-list"></ol>
+        <div class="thinking" id="thinking" hidden>Velora is thinking</div>
+      </div>
+
+      <div class="chat-error" id="chat-error" hidden></div>
+      <button type="button" class="jump" id="chat-jump" hidden>jump to latest &#8595;</button>
+
+      <form class="composer" id="composer" autocomplete="off">
+        <textarea id="say" rows="1" aria-label="Message to Velora"
+          placeholder="Speak to Velora&#8230;  (Enter sends, Shift+Enter for a newline)"></textarea>
+        <button type="submit" id="send">send</button>
+      </form>
+    </section>
+
+    <!-- timeline ------------------------------------------------------------>
+    <section class="panel panel-timeline" aria-label="Event timeline">
+      <div class="panel-head">
+        <h2>event timeline</h2>
+        <button type="button" class="jump inline" id="tl-new" hidden></button>
+        <span class="panel-meta">newest first &middot; click a row for the record</span>
+      </div>
+
+      <div class="filters" id="filters" role="group" aria-label="Filter by event family"></div>
+
+      <div class="scroll" id="timeline-scroll">
+        <p class="empty" id="timeline-empty">
+          No events recorded yet. Every thought, action and answer Velora produces
+          lands here as an immutable event, newest first.
+        </p>
+        <ol class="tl" id="timeline"></ol>
+      </div>
+
+      <div class="panel-foot">
+        <span class="note" id="timeline-note" hidden></span>
+        <span class="foot-bits" id="timeline-foot"></span>
+      </div>
+    </section>
+
+    <!-- state --------------------------------------------------------------->
+    <section class="panel panel-state" aria-label="State">
+      <div class="panel-head">
+        <h2>state</h2>
+        <span class="panel-meta" id="state-meta"></span>
+      </div>
+      <div class="scroll">
+        <div class="block">
+          <h3>beliefs</h3>
+          <div id="beliefs"></div>
+        </div>
+        <div class="block">
+          <h3>runtime</h3>
+          <div id="about"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

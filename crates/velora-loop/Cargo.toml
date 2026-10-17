@@ -1,0 +1,12 @@
+[package]
+name = "velora-loop"
+version = "0.1.0"
+edition = "2024"
+description = "The always-on Velora event loop"
+
+[dependencies]
+async-trait = "0.1"
+tokio = { version = "1", features = ["sync", "macros", "rt", "time"] }
+tracing = "0.1"
+velora-event = { path = "../velora-event" }
+velora-log = { path = "../velora-log" }

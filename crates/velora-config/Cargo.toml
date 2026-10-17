@@ -1,0 +1,16 @@
+[package]
+name = "velora-config"
+version = "0.1.0"
+edition = "2024"
+description = "What the system is configured to be, given its history"
+
+[dependencies]
+async-trait = "0.1"
+serde_json = "1"
+velora-event = { path = "../velora-event" }
+velora-llm = { path = "../velora-llm" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "time"] }

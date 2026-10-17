@@ -1,0 +1,26 @@
+[package]
+name = "velora-bin"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async-trait = "0.1"
+serde_json = "1"
+velora-agent = { path = "../velora-agent" }
+velora-config = { path = "../velora-config" }
+velora-context = { path = "../velora-context" }
+velora-exec = { path = "../velora-exec" }
+velora-operator = { path = "../velora-operator" }
+velora-reason = { path = "../velora-reason" }
+velora-storage = { path = "../velora-storage" }
+velora-web = { path = "../velora-web" }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal", "time"] }
+velora-belief = { path = "../velora-belief" }
+velora-capability = { path = "../velora-capability" }
+velora-event = { path = "../velora-event" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+velora-mind = { path = "../velora-mind" }
+velora-plan = { path = "../velora-plan" }
+velora-pulse = { path = "../velora-pulse" }
+velora-llm = { path = "../velora-llm" }

@@ -1,0 +1,8 @@
+[package]
+name = "velora-event"
+version = "0.1.0"
+edition = "2024"
+description = "Durable, ordered, append-only event history for Velora"
+
+[dependencies]
+sha2 = "0.10"

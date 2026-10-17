@@ -1,0 +1,15 @@
+target
+velora.toml
+
+# macOS metadata
+.DS_Store
+
+# Local credentials and environment
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Local browser profile
+.shot-profile/

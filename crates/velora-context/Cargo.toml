@@ -1,0 +1,13 @@
+[package]
+name = "velora-context"
+version = "0.1.0"
+edition = "2024"
+description = "Assembling what the model is shown, from beliefs and the events behind them"
+
+[dependencies]
+velora-belief = { path = "../velora-belief" }
+velora-operator = { path = "../velora-operator" }
+velora-event = { path = "../velora-event" }
+
+[dev-dependencies]
+velora-exec = { path = "../velora-exec" }

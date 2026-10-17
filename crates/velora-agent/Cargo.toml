@@ -1,0 +1,25 @@
+[package]
+name = "velora-agent"
+version = "0.1.0"
+edition = "2024"
+description = "Wiring belief changes into decisions, thoughts and actions"
+
+[dependencies]
+async-trait = "0.1"
+serde_json = "1"
+velora-belief = { path = "../velora-belief" }
+velora-context = { path = "../velora-context" }
+velora-operator = { path = "../velora-operator" }
+velora-event = { path = "../velora-event" }
+velora-exec = { path = "../velora-exec" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+velora-mind = { path = "../velora-mind" }
+velora-reason = { path = "../velora-reason" }
+
+[dev-dependencies]
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "time"] }
+velora-config = { path = "../velora-config" }
+velora-exec = { path = "../velora-exec" }
+velora-llm = { path = "../velora-llm" }

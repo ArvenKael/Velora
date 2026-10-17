@@ -1,0 +1,14 @@
+[package]
+name = "velora-pulse"
+version = "0.1.0"
+edition = "2024"
+description = "A source that fires when nothing has happened"
+
+[dependencies]
+tokio = { version = "1", features = ["rt", "sync", "time"] }
+velora-agent = { path = "../velora-agent" }
+velora-belief = { path = "../velora-belief" }
+velora-event = { path = "../velora-event" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+velora-mind = { path = "../velora-mind" }

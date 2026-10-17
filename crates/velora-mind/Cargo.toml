@@ -1,0 +1,22 @@
+[package]
+name = "velora-mind"
+version = "0.1.0"
+edition = "2024"
+description = "Deciding what an event means for belief, by rule or by model"
+
+[dependencies]
+async-trait = "0.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["rt", "sync", "time"] }
+velora-belief = { path = "../velora-belief" }
+velora-context = { path = "../velora-context" }
+velora-event = { path = "../velora-event" }
+velora-llm = { path = "../velora-llm" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+
+[dev-dependencies]
+velora-operator = { path = "../velora-operator" }
+velora-exec = { path = "../velora-exec" }
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "time"] }

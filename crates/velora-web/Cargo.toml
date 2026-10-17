@@ -1,0 +1,16 @@
+[package]
+name = "velora-web"
+version = "0.1.0"
+edition = "2024"
+description = "A live view of everything the system is doing, and a way to talk to it"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "io-util", "sync", "time"] }
+velora-belief = { path = "../velora-belief" }
+velora-context = { path = "../velora-context" }
+velora-operator = { path = "../velora-operator" }
+velora-event = { path = "../velora-event" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }

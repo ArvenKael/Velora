@@ -1,0 +1,29 @@
+# Velora's configuration. Copy to `velora.toml` for this project, or to
+# ~/.config/velora/config.toml for this machine.
+#
+# Precedence, lowest first: the machine-wide file, the project file, the
+# environment. A credential belongs in the machine-wide file, because the
+# project file lives inside a repository.
+
+[llm]
+# "openai" speaks to anything shaped like the OpenAI chat completions API:
+# OpenAI, xAI, Groq, OpenRouter, Together, or a local runtime such as Ollama.
+provider = "openai"
+model = "gpt-4o-mini"
+base_url = "https://api.openai.com/v1"
+timeout_secs = 120
+max_attempts = 3
+
+# Credentials may be set here, or in VELORA_LLM_API_KEY. Anything here is
+# machine-wide only, and is written readable by its owner alone.
+
+# ---------------------------------------------------------------------------
+# A subscription (Claude Code, Codex) is a command, not an endpoint:
+#
+# provider = "command"
+# model = "claude"
+# command = "claude"
+# command_args = ["-p"]
+#
+# The prompt is written to the command's standard input and its standard output
+# is the answer. No shell is involved, so nothing in a prompt is interpreted.

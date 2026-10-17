@@ -1,0 +1,17 @@
+[package]
+name = "velora-llm"
+version = "0.1.0"
+edition = "2024"
+description = "The main thinking LLM: provider-agnostic completion engine"
+
+[dependencies]
+async-trait = "0.1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+tokio = { version = "1", features = ["rt", "sync", "time", "process", "io-util"] }
+velora-log = { path = "../velora-log" }
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time", "io-util", "net"] }

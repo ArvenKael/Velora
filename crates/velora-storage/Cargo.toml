@@ -1,0 +1,11 @@
+[package]
+name = "velora-storage"
+version = "0.1.0"
+edition = "2024"
+description = "Storage backends behind the Store seam"
+
+[dependencies]
+rusqlite = { version = "0.32", features = ["bundled"] }
+velora-event = { path = "../velora-event" }
+
+[dev-dependencies]

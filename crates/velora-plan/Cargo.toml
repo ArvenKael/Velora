@@ -1,0 +1,18 @@
+[package]
+name = "velora-plan"
+version = "0.1.0"
+edition = "2024"
+description = "Durable intentions, worked through a step at a time"
+
+[dependencies]
+async-trait = "0.1"
+serde_json = "1"
+velora-event = { path = "../velora-event" }
+velora-exec = { path = "../velora-exec" }
+velora-log = { path = "../velora-log" }
+velora-loop = { path = "../velora-loop" }
+
+[dev-dependencies]
+serde_json = "1"
+tokio = { version = "1", features = ["macros", "rt", "rt-multi-thread", "time"] }
+velora-log = { path = "../velora-log" }

@@ -1,0 +1,23 @@
+[workspace]
+resolver = "3"
+members = [
+    "crates/velora-core",
+    "crates/velora-bin",
+    "crates/velora-log",
+    "crates/velora-event",
+    "crates/velora-loop",
+    "crates/velora-belief",
+    "crates/velora-llm",
+    "crates/velora-mind",
+    "crates/velora-exec",
+    "crates/velora-context",
+    "crates/velora-config",
+    "crates/velora-reason",
+    "crates/velora-agent",
+    "crates/velora-operator",
+    "crates/velora-storage",
+    "crates/velora-web",
+    "crates/velora-capability",
+    "crates/velora-plan",
+    "crates/velora-pulse",
+]

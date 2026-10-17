@@ -1,0 +1,13 @@
+[package]
+name = "velora-log"
+version = "0.1.0"
+edition = "2024"
+description = "Logging and diagnostics for the Velora project"
+
+[dependencies]
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[features]
+default = []
+json = ["tracing-subscriber/json"]
